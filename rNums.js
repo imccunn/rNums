@@ -18,7 +18,7 @@
   // basic implementation of obtaining a float within a range
   //
   //
-  // @params min, max, prec
+  // @params min, max, precision
   // @return 
   
   function rFloat( min, max, precision ) {
