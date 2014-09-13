@@ -26,5 +26,18 @@
     return (Math.random() * (max - min) + min).toFixed(precision);
     
   }
+
+  // ****************************************
+  // rAmp - 
+  //
+  //
+  // @params precision
+  // @return 
+  
+  function rAmp( precision ) {
+    
+    return (Math.random() * 2 - 1).toFixed(precision);
+    
+  }
   
 })();
