@@ -1,4 +1,4 @@
-(function() {
+var r = (function() {
   'use strict';
   
   // ****************************************
@@ -8,7 +8,7 @@
   // @params min, max
   // @return 
   
-  function rInt( min, max ) {
+  function int( min, max ) {
     
     return Math.floor(Math.random() * (max - min) + min);
     
@@ -21,9 +21,9 @@
   // @params min, max, precision
   // @return 
   
-  function rFloat( min, max, precision ) {
+  function float( min, max, precision ) {
     
-    return (Math.random() * (max - min) + min).toFixed(precision);
+    return parseFloat((Math.random() * (max - min) + min).toFixed(precision));
     
   }
 
@@ -34,10 +34,18 @@
   // @params precision
   // @return 
   
-  function rAmp( precision ) {
-    
-    return (Math.random() * 2 - 1).toFixed(precision);
+  function amp( precision ) {
+
+    var prec = precision || 4;
+
+    return parseFloat((Math.random() * 2 - 1).toFixed(prec));
     
   }
   
+  return {
+    rInt: rInt,
+    rFloat: rFloat,
+    rAmp: rAmp
+  }
+
 })();
