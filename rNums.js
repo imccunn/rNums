@@ -28,7 +28,7 @@ var r = (function() {
   }
 
   // ****************************************
-  // rAmp - 
+  // amp - 
   //
   //
   // @params precision
