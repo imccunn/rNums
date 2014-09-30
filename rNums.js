@@ -42,6 +42,20 @@ var r = (function() {
     
   }
   
+  // ****************************************
+  // seedRand - seeded random number 
+  //
+  //
+  // @params seed
+  // @return 
+  
+  function seedRand(s) {
+    
+      var x = Math.sin(s) * 10000;
+      
+      return x - Math.floor(x);
+  }
+  
   return {
     rInt: rInt,
     rFloat: rFloat,
