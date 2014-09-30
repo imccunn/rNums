@@ -49,7 +49,7 @@ var r = (function() {
   // @params seed
   // @return 
   
-  function seedRand(s) {
+  function seedRand( s ) {
     
       var x = Math.sin(s) * 10000;
       
