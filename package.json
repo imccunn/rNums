@@ -1,10 +1,10 @@
 {
   "name": "rNums",
-  "version": "1.0.0",
-  "description": "rNums =====",
+  "version": "0.2.0",
+  "description": "A small library of functions for generating random numbers.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/imccunn/rNums",
   "devDependencies": {
-    "eslint": "^3.5.0"
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "mocha": "^3.0.2"
   }
 }
