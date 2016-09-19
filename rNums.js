@@ -8,7 +8,7 @@ var r = (function() {
   // @params min, max
   // @return 
   
-  function int( min, max ) {
+  function int(min, max) {
     
     return Math.floor(Math.random() * (max - min) + min);
     
