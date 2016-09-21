@@ -20,7 +20,7 @@ function amp(precision) {
   return parseFloat((Math.random() * 2 - 1).toFixed(prec));
 }
   
-function seedRand( s ) {
+function seedRand(s) {
   var x = Math.sin(s) * 10000;
   return x - Math.floor(x);
 }
