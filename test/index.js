@@ -24,4 +24,15 @@ describe('check', () => {
     }
     done();
   });
+  it('float: should return a value inside a given range', (done) => {
+      var int = rNum.float(1, 9, 2);
+      expect(int).to.be.below(10);
+      expect(int).to.be.at.least(1);
+    done();
+  });
+  it('float: should return the correct precision', (done) => {
+      var int = rNum.float(1, 9, 2);
+      expect(int.toString().length).to.be.below(5)
+    done();
+  });
 });
